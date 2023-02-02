@@ -18,9 +18,7 @@ return new class extends Migration
 
             $table->string('name', 32);
             $table->string('luogo_di_nascita', 32);
-
             $table->date('data_denedizione');
-
             $table->integer('numero_miracoli') -> unsigned();
 
             $table->timestamps();
