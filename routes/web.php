@@ -15,3 +15,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [MySaints::class, 'home']);
+Route::get('/saint/{id}', [MySaints::class, 'show']);

@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Saint extends Model
 {
     use HasFactory;
+
+    public $name;
+    public $luogoDiNascita;
+    public $dataBenedizione;
+    public $numeroMiracoli;
+    
 }
