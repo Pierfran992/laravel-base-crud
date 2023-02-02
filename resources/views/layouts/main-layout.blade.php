@@ -8,6 +8,14 @@
     @vite('resources/js/app.js')
 </head>
 <body>
-    @yield('content')
+
+    @include('components.header')
+
+    <div class="ms_container">
+        @yield('content')    
+    </div>
+
+    @include('components.footer')
+
 </body>
 </html>
