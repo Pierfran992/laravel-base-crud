@@ -15,10 +15,10 @@
         </thead>
         <tbody class="table-group-divider">
                     <tr>
-                        <th scope="row">{{ $saint ['name'] }}</th>
-                        <td>{{ $saint ['luogo_di_nascita'] }}</td>
-                        <td>{{ $saint ['data_denedizione'] }}</td>
-                        <td>{{ $saint ['numero_miracoli'] }}</td>
+                        <th scope="row">{{ $saint -> name }}</th>
+                        <td>{{ $saint -> luogo_di_nascita }}</td>
+                        <td>{{ $saint -> data_denedizione }}</td>
+                        <td>{{ $saint -> numero_miracoli }}</td>
                     </tr>
         </tbody>
     </table>

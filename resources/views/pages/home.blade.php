@@ -17,11 +17,11 @@
                 @foreach ($saints as $saint)
                     <tr>
                         <th scope="row">
-                            <a href="/saint/{{ $saint -> id }}" class="text-danger">{{ $saint['name'] }}</a>
+                            <a href="/saint/{{ $saint -> id }}" class="text-danger">{{ $saint -> name }}</a>
                         </th>
-                        <td>{{ $saint['luogo_di_nascita'] }}</td>
-                        <td>{{ $saint['data_denedizione'] }}</td>
-                        <td>{{ $saint['numero_miracoli'] }}</td>
+                        <td>{{ $saint -> luogo_di_nascita }}</td>
+                        <td>{{ $saint -> data_denedizione }}</td>
+                        <td>{{ $saint -> numero_miracoli }}</td>
                     </tr>
                 @endforeach
         </tbody>
