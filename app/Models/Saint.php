@@ -10,8 +10,8 @@ class Saint extends Model
     use HasFactory;
 
     public $name;
-    public $luogoDiNascita;
-    public $dataBenedizione;
-    public $numeroMiracoli;
+    public $luogo_di_nascita;
+    public $data_denedizione;
+    public $numero_miracoli;
     
 }
