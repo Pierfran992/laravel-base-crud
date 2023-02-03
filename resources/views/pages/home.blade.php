@@ -16,12 +16,15 @@
         <tbody class="table-group-divider">
                 @foreach ($saints as $saint)
                     <tr>
-                        <th scope="row">
-                            <a href="/saint/{{ $saint -> id }}" class="text-danger">{{ $saint -> name }}</a>
+                        <th scope="row" class="align-middle">
+                            <a href="{{route('saint.show' , ['id' => $saint -> id])}}" class="text-danger">{{ $saint -> name }}</a>
                         </th>
-                        <td>{{ $saint -> luogo_di_nascita }}</td>
-                        <td>{{ $saint -> data_denedizione }}</td>
-                        <td>{{ $saint -> numero_miracoli }}</td>
+                        <td class="align-middle">{{ $saint -> luogo_di_nascita }}</td>
+                        <td class="align-middle">{{ $saint -> data_denedizione }}</td>
+                        <td class="align-middle">{{ $saint -> numero_miracoli }}</td>
+                        <td class="align-middle">
+                            <a class="btn btn-danger " href="{{route('saint.delete', ['id' => $saint -> id])}}">DELETE</a>
+                        </td>
                     </tr>
                 @endforeach
         </tbody>

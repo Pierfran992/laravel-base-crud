@@ -14,5 +14,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [MySaints::class, 'home']);
-Route::get('/saint/{id}', [MySaints::class, 'show']);
+// INDEX
+Route::get('/', [MySaints::class, 'home'])
+    ->name('home');
+
+// SHOW
+Route::get('/saint/show/{id}', [MySaints::class, 'show'])
+    ->name('saint.show');
+
+// DELETE
+Route::get('/saint/delete/{id}', [MySaints::class, 'delete'])
+    ->name('saint.delete');

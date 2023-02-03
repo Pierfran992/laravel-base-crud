@@ -8,6 +8,7 @@ use App\Models\Saint;
 
 class MySaints extends Controller
 {
+    // INDEX
     public function home(){
 
         $saints = Saint::all();
@@ -20,6 +21,7 @@ class MySaints extends Controller
 
     }
 
+    // SHOW
     public function show($id) {
 
         $saint = Saint::find($id);
@@ -29,5 +31,12 @@ class MySaints extends Controller
         ];
 
         return view('pages.saint', $data);
+    }
+
+    // DELETE
+    public function delete($id){
+        $saint = Saint::find($id);
+        $saint->delete();
+        return redirect()->route('home');
     }
 }
