@@ -25,3 +25,10 @@ Route::get('/saint/show/{id}', [MySaints::class, 'show'])
 // DELETE
 Route::get('/saint/delete/{id}', [MySaints::class, 'delete'])
     ->name('saint.delete');
+
+// CREATE
+Route::get('/saint/create', [MySaints::class, 'create'])
+    ->name('saint.create');
+
+Route::post('/saint/store', [MySaints::class, 'store'])
+    ->name('saint.store');

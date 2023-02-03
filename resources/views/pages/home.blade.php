@@ -3,6 +3,9 @@
 @section('content')
     <h1 class="text-danger">My Saints List</h1>
 
+    {{-- link che indirizza l'utente alla pagina per creare un nuovo elemento da inserire nel database --}}
+    <a class="btn btn-danger m-3" href="{{route('saint.create')}}">CREATE NEW SAINT</a>
+
     {{-- table in cui stampare i dati del database con un foreach --}}
     <table class="table">
         <thead>

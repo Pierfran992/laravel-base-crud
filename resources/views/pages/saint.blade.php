@@ -23,7 +23,6 @@
         </tbody>
     </table>
 
-    <div class="btn btn-danger ms_button">
-        <a href="/">Return to list</a>
-    </div>
+    <a class="btn btn-danger ms_button" href="/">Return to list</a>
+    
 @endsection
